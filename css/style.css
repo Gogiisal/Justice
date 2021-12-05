@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Inter-Regular';
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    font-family: 'Inter-Medium';
+}
+ul {
+    list-style: none;
+}
+button {
+    cursor: pointer;
+    font-family: 'Inter-Bold', serif;
+    background: transparent;
+}
+div {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Для Firefox */
+}
+::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    width: 0;
+    transition: 0.3s;
+}
+:hover {
+    transition: 0.3s;
+}
+ul, .header-row, .row-menu-auth, .main-menu, .menu-right, .button-add, .footer-top, .footer-bottom, .privacy-block {
+    display: flex;
+    align-items: center;
+}
+.header {
+    width: 100%;
+    border-bottom: 2px solid #F4F5F4;
+    margin-bottom: 56px;
+}
+.container {
+    max-width: 1145px;
+    margin: 0 auto;
+}
+.header-row {
+    width: 100%;
+    max-height: 88px;
+    padding: 32px 0;
+    justify-content: space-between; 
+}
+.button-close {
+    border: 0;
+    background: transparent;
+    display: none;
+}
+.button-close > svg{
+    width: 30px;
+    height: 30px;
+
+}
+.menu-link {
+    position: relative;
+    display: inline;
+    padding-bottom: 6px;
+    margin-right: 40px;
+}
+.menu-link::after { 
+    background:#4448DA;
+}
+.menu-link:hover::after { 
+    width: 100%;
+}
+.menu-link:hover {
+    color: #4448DA;
+}
+.button-auth {
+    width: 92px;
+    height: 38px;
+    border: 1px solid #4448DA;
+    border-radius: 8px;
+    color: #4448DA;
+    margin-left: 16px;
+}
+.button-auth:hover {
+    background-color: #4448DA;
+    color: #ffffff;
+}
+.button-bell {
+    border: none;
+    margin: 0 24px;
+}
+.button-bell:hover .bell-icon > path {
+    stroke: #4448DA
+}
+.button-user {
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: #F4F5F4;
+    border-radius: 50%;
+}
+.button-user:hover {
+    background-color: #4448DA;
+}
+.button-user:hover .user-icon > path {
+    stroke: #ffffff;
+}
+.button-menu-burger {
+    display: flex;
+    width: 100px;
+    border: none;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    display: none;
+}
+.menu-burger-text {
+    border-bottom: 2px solid #ffffff;
+    color: #000000; 
+}
+.button-menu-burger:hover .menu-text{
+    border-bottom: 2px solid #4448DA;
+    color: #4448DA;
+}
+.button-menu-burger:hover svg > rect{
+    fill: #4448DA
+}
+
+
+
+main {
+    margin-bottom: 120px;
+}
+.main-menu {
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.main-menu-link {
+    padding: 16px 32px 16px 32px;
+    border: 1px solid #F4F5F4;
+    border-radius: 8px;
+    margin-right: 16px;
+    font-size: 14px;
+}
+.main-menu-link:hover {
+    background-color: #F4F5F4;
+}
+input {
+    width: 254px;
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid #F4F5FE;
+    padding: 0 16px 0 16px;
+    background-color: transparent;
+    outline: none;
+    margin: 0 16px 0 16px;
+}
+input:focus {
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+.menu-right {
+    display: flex;
+}
+.button-add {
+    width: 154px;
+    height: 46px;
+    color: #fff;
+    background-color: #4448DA;
+    border: 1px solid #4448DA;
+    border-radius: 8px;
+    justify-content: center;
+}
+.btn-span-add {
+    display: block;
+    margin-right: 6px;
+}
+.button-add:hover {
+    background: #fff;
+    color: #4448DA;
+}
+.button-add:hover .plus-icon>path{
+    fill: #4448DA;
+}
+.note-content {
+    display: flex;
+    align-items:center;
+    width: 100%;
+    background: #F4F5F4;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 16px;
+    border: 1px solid #F4F5F4;
+}
+.note-content:hover {
+    border: 1px solid #000000;
+} 
+.content-text {
+    width: 100%;
+    font-family: 'Inter-Bold';
+}
+.button-delete, .button-edit {
+    border: none;
+    margin-left: 20px;
+}
+.button-delete:hover .delete-icon > path {
+    stroke: #000000;
+}
+.button-edit:hover .edit-icon > path {
+    stroke: #000000;
+}
+.button-frame {
+    border: none;
+    background: transparent;
+    display: none;
+}
+.block-edit-delete {
+    display: none;
+}
+.footer {
+    width: 100%;
+    background: #000000;
+}
+.footer-row {
+    width: 100%;
+}
+.footer-top {
+    justify-content: space-between;
+    border-bottom: 1px solid #F4F5F4;
+    padding: 48px 0;
+}
+.link-footer {
+    position: relative;
+    display: inline;
+    padding-bottom: 6px;
+    margin-left: 40px;
+    color: #ffffff;
+}
+.link-footer::after { 
+    background:#ffffff;
+    margin-left: 40px;
+}
+.link-footer:hover::after { 
+    width: 100%;
+}
+.link-footer:hover {
+    color: #fff;
+}
+.footer-bottom {
+    justify-content: space-between;
+    padding: 24px 0;
+}
+.privacy-block {
+    display: flex;
+}
+.span-justice, .link-terms, .link-privacy {
+    color:#B4B4B4;
+    font-size: 12px;
+    font-family: 'Inter-Regular';
+}
+.link-terms, .link-privacy {
+    margin-left: 66px;
+}
